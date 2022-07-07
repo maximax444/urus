@@ -1,0 +1,205 @@
+.cart
+    &__top
+        display: flex
+        border-bottom: 3px solid #D3D3D3
+        margin-bottom: 50px
+        a
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            color: #373737
+            margin-bottom: -3px
+            text-decoration: none
+            padding: 24px 16px
+            &.active, &:hover
+                color: #19C8DB
+                border-bottom: 3px solid #19C8DB
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__left
+        width: calc(100% - 300px)
+    &__block
+        margin-bottom: 40px
+        padding: 22px 35px
+        background: #FFFFFF
+        border: 2px solid #E7DED9
+        border-radius: 8px
+        display: flex
+        justify-content: space-between
+        position: relative
+    &__img
+        width: 164px
+        height: 152px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            max-width: 100%
+            max-height: 100%
+    &__name
+        font-weight: 700
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 8px
+        color: #373737
+        text-decoration: none
+    &__sklad
+        margin-bottom: 16px
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: #797979
+    &__price
+        text-align: left
+        margin-bottom: 20px
+        .old
+            text-align: left
+    &__final
+        padding-top: 42px
+    &__del
+        background-color: transparent
+        position: absolute
+        padding: 0
+        border: 0
+        top: 15px
+        right: 12px
+    &__wish
+        background-color: transparent
+        position: absolute
+        padding: 0
+        border: 0
+        top: 22px
+        right: 50px
+.wish
+    &__add
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 260px
+        height: 34px
+        color: #FFFFFF
+        position: absolute
+        bottom: 28px
+        right: 20px
+        background: #19C8DB
+        border-radius: 5px
+        border: 1px solid #19C8DB
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            background: darken(#19C8DB, 5)
+    &__block
+        width: 100%
+        .cart__cont
+            width: calc(100% - 200px)
+.news
+    &__block
+        display: flex
+        padding: 20px 15px
+        margin-bottom: 50px
+        background: #FFFFFF
+        border: 2px solid #E7DED9
+        border-radius: 8px
+        text-decoration: none
+        transition: all 0.3s
+        &:hover
+            transform: scale(1.03)
+            border: 2px solid #19C8DB
+    &__img
+        width: 154px
+        height: 142px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 35px
+        img
+            max-width: 100%
+            max-height: 100%
+    &__text
+        width: calc(100% - 190px)
+        font-size: 18px
+        line-height: 22px
+        color: #373737
+        span
+            display: block
+            margin-bottom: 10px
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+@media(max-width: 991px)
+    .cart
+        &__wrap
+            display: block
+        &__left
+            width: 100%
+        &__img
+            width: 120px
+        &__cont
+            width: 250px
+@media(max-width: 767px)
+    .cart
+        &__wrap
+            .checkout__count
+                display: flex
+        &__final
+            min-width: 100px
+    .wish__block
+        padding-bottom: 55px
+@media(max-width: 575px)
+    .cart
+        &__block
+            display: block
+            padding: 20px
+            padding-top: 40px
+            padding-left: 110px
+        &__img
+            width: 80px
+            left: 15px
+            height: 74px
+            top: 50%
+            margin-top: -37px
+            position: absolute
+        &__final
+            display: flex
+            justify-content: space-between
+            padding-top: 0
+        &__name
+            font-weight: 700
+            font-size: 10px
+            line-height: 12px
+            display: flex
+            align-items: center
+            color: #373737
+            margin-bottom: 8px
+            max-width: 150px
+        &__sklad
+            display: none
+        &__rec
+            font-size: 10px
+            line-height: 12px
+            width: 80px
+            height: 20px
+        &__wish
+            top: 12px
+        &__del
+            top: 5px
+    .wish__block
+        padding-bottom: 60px
+        margin-bottom: 20px
+        .cart__cont
+            width: calc(100% - 0px)
+    .wish
+        &__add
+            bottom: 10px
+    .news
+        &__block
+            margin-bottom: 20px
+            display: block
+        &__text
+            font-size: 12px
+            line-height: 12px
+            color: #373737

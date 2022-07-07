@@ -1,0 +1,137 @@
+.catalog
+    background: #FFFCFA
+    padding: 50px 0
+    &__title
+        margin-top: 0
+        margin-bottom: 65px
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #373737
+    &__wrap
+        margin-bottom: 60px
+        padding-top: 50px
+        position: relative
+        border-top: 3px solid #D3D3D3
+    &__top
+        display: flex
+        align-items: center
+        font-weight: 600
+        font-size: 21px
+        line-height: 26px
+        color: #373737
+        position: absolute
+        top: -26px
+        left: 0
+        background: #FFFCFA
+        padding-right: 40px
+        img
+            margin-right: 27px
+    &__links
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 15px
+    &__block
+        padding-right: 40px
+        position: relative
+        a
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            color: #373737
+            text-decoration: none
+            &:hover
+                color: #19C8DB
+    &__drop
+        width: 265px
+        padding: 24px 30px
+        padding-bottom: 12px
+        background: #FFFCFA
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25)
+        border-radius: 5px
+        position: absolute
+        z-index: 3
+        top: 0
+        left: 90%
+        display: none
+        a
+            display: block
+            margin-bottom: 12px
+    &__block:hover
+        .catalog__drop
+            display: block
+    &-in
+        background: #FFFCFA
+        padding: 50px 0
+        &__title
+            margin: 0
+            font-weight: 600
+            font-size: 40px
+            line-height: 49px
+            color: #373737
+        &__top
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 65px
+        &__select
+            height: 40px
+            width: 200px
+            border: 1px solid #373737
+            border-radius: 5px
+            padding: 0 10px
+            font-weight: 500
+            font-size: 15px
+            line-height: 18px
+            color: #373737
+            &:focus
+                outline: none
+        &__wrap
+            display: flex
+            justify-content: space-between
+        &__filter
+            width: 260px
+        &__prods
+            width: calc(100% - 300px)
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 50px 40px
+            .card
+                width: 100%
+@media(max-width: 1199px)
+    .catalog-in
+        &__prods
+            grid-gap: 40px 20px
+            grid-template-columns: repeat(2, 1fr)
+@media(max-width: 991px)
+    .catalog
+        &__links
+            grid-template-columns: repeat(2, 1fr)
+        &__drop
+            left: 10%
+            top: 90%
+        &-in
+            &__filter
+                width: 200px
+            &__prods
+                width: calc(100% - 220px)
+@media(max-width: 767px)
+    .catalog
+        &-in
+            &__wrap
+                display: block
+            &__prods
+                padding-top: 30px
+                width: 100%
+@media(max-width: 575px)
+    .catalog
+        overflow: hidden
+        &__links
+            grid-template-columns: repeat(1, 1fr)
+        &-in
+            &__top
+                display: block
+            &__title
+                font-size: 22px
+            &__prods
+                grid-template-columns: repeat(1, 1fr)

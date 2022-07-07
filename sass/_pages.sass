@@ -1,0 +1,177 @@
+.delivery
+    padding-top: 50px
+    padding-bottom: 100px
+    background: #FFFCFA
+    &__title
+        margin: 0
+        margin-bottom: 38px
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #373737
+    &__wrap
+        display: flex
+        justify-content: space-between
+        grid-gap: 40px
+    &__column
+        width: calc(50% - 20px)
+    &__top
+        margin-bottom: 9px
+        display: flex
+        align-items: center
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        text-transform: uppercase
+        color: #373737
+        img
+            margin-right: 12px
+    p
+        font-size: 18px
+        line-height: 22px
+        color: #373737
+        margin-top: 0
+        margin-bottom: 22px
+.about
+    padding-top: 50px
+    padding-bottom: 60px
+    background: #FFFCFA
+    &__img
+        float: left
+        padding-right: 30px
+        padding-bottom: 30px
+    &__wrap
+        p
+            margin-top: 0
+            margin-bottom: 18px
+            font-size: 18px
+            line-height: 22px
+            color: #373737
+        h2
+            margin-top: 0
+            margin-bottom: 28px
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            color: #373737
+    &-feat
+        padding-top: 83px
+        padding-bottom: 117px
+        background: #F2F2F2
+        &__title
+            padding-bottom: 32px
+            margin-bottom: 47px
+            margin-top: 0
+            font-weight: 600
+            font-size: 40px
+            line-height: 49px
+            color: #373737
+            border-bottom: 3px solid #D3D3D3
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 60px 50px
+        &__top
+            display: flex
+            align-items: center
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            text-transform: uppercase
+            margin-bottom: 13px
+            color: #373737
+            img
+                margin-right: 15px
+        &__text
+            font-size: 18px
+            line-height: 22px
+            color: #373737
+.lic
+    padding-top: 50px
+    padding-bottom: 120px
+    background: #FFFCFA
+    .home-products__nav
+        background: #FFFCFA
+    &__title
+        padding-bottom: 62px
+        margin-bottom: 62px
+        margin-top: 0
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #373737
+        border-bottom: 3px solid #D3D3D3
+    .container
+        position: relative
+    a
+        img
+            max-width: 100%
+@media(max-width: 767px)
+    .delivery
+        &__wrap
+            display: block
+        &__column
+            width: 100%
+            margin-bottom: 40px
+    .about
+        &__img
+            float: none
+            width: 100%
+            img
+                width: 100%
+        &-feat__wrap
+            grid-template-columns: repeat(2, 1fr)
+@media(max-width: 575px)
+    .delivery
+        padding: 50px 0
+        &__title
+            font-size: 28px
+            line-height: 24px
+            margin-bottom: 30px
+        p
+            font-size: 14px
+            line-height: 17px
+            margin-bottom: 17px
+        &__top
+            font-size: 16px
+            line-height: 15px
+    .about
+        padding-top: 56px
+        padding-bottom: 70px
+        &__img
+            margin-bottom: 40px
+        &__wrap
+            h2
+                margin-bottom: 20px
+                font-size: 16px
+                line-height: 20px
+            p
+                font-size: 14px
+                line-height: 17px
+                margin-bottom: 14px
+        &-feat
+            padding: 70px 0
+            &__wrap
+                grid-template-columns: repeat(1, 1fr)
+                grid-gap: 30px
+            &__title
+                padding-bottom: 40px
+                margin-bottom: 30px
+                font-size: 26px
+                line-height: 24px
+            &__top
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 11px
+            &__text
+                font-size: 14px
+                line-height: 17px
+    .lic
+        padding-bottom: 70px
+        &__title
+            padding-bottom: 42px
+            margin-bottom: 35px
+            font-size: 20px
+            line-height: 24px
+        a img
+            width: 100%

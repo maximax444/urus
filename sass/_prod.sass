@@ -1,0 +1,176 @@
+.prod
+    padding-top: 66px
+    padding-bottom: 120px
+    background: #FFFCFA
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__left
+        width: 500px
+    &__img
+        width: 100%
+        height: 440px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 18px
+        background: #FFFFFF
+        border: 2px solid #E7DED9
+        border-radius: 8px
+        img
+            max-width: 90%
+            max-height: 90%
+    &__dop
+        display: flex
+        grid-gap: 14px
+        flex-wrap: wrap
+        a
+            background: #FFFFFF
+            border: 2px solid #E7DED9
+            border-radius: 8px
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 94px
+            height: 82px
+            img
+                max-width: 90%
+                max-height: 90%
+    &__cont
+        width: calc(100% - 560px)
+    &__rec
+        padding: 8px 10px
+        border: 1px solid #E7DED9
+        border-radius: 5px
+        font-weight: 500
+        font-size: 15px
+        line-height: 18px
+        color: #373737
+        margin-bottom: 16px
+        display: inline-block
+    &__title
+        margin-top: 0
+        margin-bottom: 16px
+        font-weight: 600
+        font-size: 26px
+        line-height: 32px
+        color: #373737
+    &__descr
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: #373737
+        margin-bottom: 20px
+        margin-top: 0
+    &__sklad
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: #797979
+        margin-bottom: 92px
+    &__price
+        font-weight: 700
+        font-size: 30px
+        line-height: 37px
+        color: #373737
+        .old
+            display: block
+            margin-bottom: 6px
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            text-decoration-line: line-through
+            color: #EB5757
+    &__add
+        margin: 25px 0
+        height: 34px
+        width: 200px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #19C8DB
+        border-radius: 5px
+        border: 1px solid #19C8DB
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            background: darken(#19C8DB, 5)
+    &__punkt
+        font-weight: 500
+        font-size: 15px
+        line-height: 18px
+        display: flex
+        align-items: center
+        color: #373737
+        img
+            margin-right: 8px
+    &__tabs
+        padding-top: 60px
+        &-top
+            border-bottom: 3px solid #D3D3D3
+            display: flex
+            a
+                font-weight: 500
+                font-size: 18px
+                line-height: 22px
+                text-decoration: none
+                color: #373737
+                padding: 24px 11px
+                padding-top:
+                margin-bottom: -3px
+                border-bottom: 3px solid transparent
+                &.active, &:hover
+                    color: #19C8DB
+                    border-bottom: 3px solid #19C8DB
+        &-cont
+            padding-top: 30px
+            &-block
+                display: none
+                &.active
+                    display: block
+    &__str
+        padding: 15px 0
+        display: flex
+        justify-content: space-between
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: #373737
+        border-bottom: 2px solid #D3D3D3
+        b
+            max-width: 35%
+        span
+            max-width: 60%
+            text-align: right
+@media(max-width: 991px)
+    .prod
+        &__wrap
+            flex-direction: column
+        &__cont, &__left
+            width: 100%
+            margin-bottom: 60px
+        &__sklad
+            margin-bottom: 40px
+        &__tabs
+            padding-top: 0
+@media(max-width: 575px)
+    .prod
+        padding: 40px 0
+        &__str
+            padding: 12px 0
+            font-size: 12px
+            line-height: 16px
+        &__img
+            height: 250px
+        &__dop
+            grid-gap: 10px
+            a
+                width: 60px
+                height: 55px
+        &__add
+            width: 100%
+            height: 40px

@@ -1,0 +1,202 @@
+.checkout
+    padding-top: 50px
+    padding-bottom: 95px
+    background: #FFFCFA
+    &__title
+        margin-top: 0
+        font-weight: 600
+        font-size: 40px
+        line-height: 49px
+        color: #373737
+        margin-bottom: 50px
+    &__block
+        margin-bottom: 30px
+        padding: 18px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background: #FFFCFA
+        border: 2px solid #E7DED9
+        border-radius: 8px
+    &__img
+        width: 50px
+        height: 45px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 33px
+        img
+            max-width: 100%
+            max-height: 100%
+    &__name
+        width: 750px
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        display: flex
+        align-items: center
+        color: #373737
+    &__price
+        font-weight: 700
+        font-size: 20px
+        line-height: 24px
+        text-align: right
+        color: #373737
+        .old
+            display: block
+            margin-bottom: 2px
+            font-weight: 500
+            font-size: 14px
+            line-height: 17px
+            text-align: right
+            text-decoration-line: line-through
+            color: #EB5757
+    &__count
+        width: 100px
+        height: 40px
+        display: flex
+        justify-content: center
+        border: 1px solid #E7DED9
+        border-radius: 5px
+        button
+            height: 100%
+            width: 36px
+            border: 0
+            background-color: transparent
+            font-size: 32px
+            line-height: 38px
+            color: #373737
+            cursor: pointer
+            &:first-child
+                height: 34px
+                line-height: 32px
+        input
+            text-align: center
+            width: 28px
+            border: 0
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            color: #373737
+            height: 100%
+    &__form
+        display: flex
+        justify-content: space-between
+        grid-gap: 40px
+        padding-top: 25px
+    &__left
+        width: 760px
+        input
+            padding: 17px 0
+            width: 100%
+            border-radius: 0
+            border: 0
+            border-bottom: 2px solid #D3D3D3
+            margin-bottom: 10px
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            &:focus
+                outline: none
+    &__info
+        width: 260px
+    &__line
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 16px
+        span
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            display: flex
+            align-items: center
+            color: #373737
+            &.red
+                color: #EB5757
+    &__final
+        margin-top: 28px
+        padding: 25px 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-top: 2px solid #D3D3D3
+        span
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            color: #373737
+        b
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            color: #373737
+    &__buy
+        height: 40px
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
+        background: #19C8DB
+        transition: all 0.3s
+        border-radius: 5px
+        border: 1px solid #19C8DB
+        margin-bottom: 14px
+        &:hover
+            cursor: pointer
+            background: darken(#19C8DB, 5)
+    &__alert
+        display: flex
+        align-items: flex-start
+        img
+            width: 14px
+            margin-right: 8px
+        span
+            width: calc(100% - 22px)
+            font-weight: 500
+            font-size: 15px
+            line-height: 18px
+            color: #373737
+@media(max-width: 1199px)
+    .checkout
+        &__name
+            width: auto
+@media(max-width: 991px)
+    .checkout
+        &__form
+            display: block
+        &__left
+            margin-bottom: 40px
+            max-width: 100%
+@media(max-width: 767px)
+    .checkout
+        &__count
+            display: none
+        &__name
+            width: 350px
+@media(max-width: 575px)
+    .checkout
+        &__name
+            font-size: 10px
+            line-height: 12px
+            width: 150px
+        &__price
+            font-size: 12px
+            line-height: 15px
+            .old
+                font-size: 10px
+                line-height: 12px
+        &__block
+            margin-bottom: 15px
+            padding: 10px
+        &__img
+            margin-right: 0
+        &__info
+            width: 100%
+        &__title
+            font-size: 30px
+            line-height: normal
